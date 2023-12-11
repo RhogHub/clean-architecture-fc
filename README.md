@@ -1,2 +1,2 @@
-# ddd-project1
-ddd patterns chalenge
+# Challenge of "Clean Architecture" Module - Use case 
+Usecase of products with tests.
