@@ -6,7 +6,7 @@ export default class UpdateCustomerUseCase {
     private customerRepository: CustomerRepositoryInterface;
     constructor(CustomerRepository: CustomerRepositoryInterface) {
         this.customerRepository = CustomerRepository;
-    }
+    };
 
     async execute(
         input: InputUpdateCustomerDto

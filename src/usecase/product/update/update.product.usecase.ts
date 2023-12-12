@@ -5,7 +5,7 @@ export default class UpdateProductUseCase {
     private productRepository: ProductRepositoryInterface;
     constructor(ProductRepository: ProductRepositoryInterface) {
         this.productRepository = ProductRepository;
-    }
+    };
 
     async execute(input: InputUpdateProductDto): Promise<OutputUpdateProductDto> {
         const product = await this.productRepository.find(input.id);

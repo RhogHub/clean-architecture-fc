@@ -25,7 +25,6 @@ describe("Unit test for listing product use case", () => {
         expect(output.products[0].id).toBe(product1.id);
         expect(output.products[0].name).toBe(product1.name);
         expect(output.products[0].price).toBe(product1.price);
-
         expect(output.products[1].id).toBe(product2.id);
         expect(output.products[1].name).toBe(product2.name);
         expect(output.products[1].price).toBe(product2.price);

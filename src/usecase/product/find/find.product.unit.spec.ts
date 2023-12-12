@@ -48,4 +48,5 @@ describe("Unit test find product use case", () => {
             return usecase.execute(input);
         }).rejects.toThrow("Product not found");
     });
+
 });

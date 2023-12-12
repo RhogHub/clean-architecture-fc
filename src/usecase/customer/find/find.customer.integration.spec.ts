@@ -53,4 +53,4 @@ describe("Test find customer use case", () => {
 
         expect(result).toEqual(output);
     });
-})
+});

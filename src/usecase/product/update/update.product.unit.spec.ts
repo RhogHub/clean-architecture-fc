@@ -26,4 +26,5 @@ describe("Unit test for product update use case", () => {
 
         expect(output).toEqual(input);
     });
+
 });

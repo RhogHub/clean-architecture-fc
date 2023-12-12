@@ -8,7 +8,7 @@ export default class CreateCustomerUseCase {
 
     constructor(customerRepository: CustomerRepositoryInterface) {
         this.customerRepository = customerRepository;
-    }
+    };
 
     async execute(input: InputCreateCustomerDto): Promise<OutputCreateCustomerDto> {
         

@@ -37,6 +37,6 @@ describe("Unit test for customer listing use case", () => {
         expect(output.customers[1].id).toBe(customer2.id);
         expect(output.customers[1].name).toBe(customer2.name);
         expect(output.customers[1].address.street).toBe(customer2.Address.street);
-
     });
+
 });
