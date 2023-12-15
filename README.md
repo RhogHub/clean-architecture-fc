@@ -1,2 +1,5 @@
-# Challenge of "Clean Architecture" Module - Use case 
-Usecase of products with tests.
+# Challenges of "Clean Architecture"
+- Usecase: Product with tests;
+- API: Product with tests;
+- Notification Pattern: products;
+- Validation: products;

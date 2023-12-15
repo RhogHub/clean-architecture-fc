@@ -19,6 +19,7 @@
 
 import Entity from "../../@shared/entity/entity.abstract";
 import NotificationError from "../../@shared/notification/notification.error";
+import CustomerValidatorFactory from "../factory/customer.validator.factory";
 import Address from "../value-object/address";
 
 export default class Customer extends Entity {
@@ -46,23 +47,27 @@ export default class Customer extends Entity {
         return this._rewardPoints;
     }
 
-    validate() {
-        if (this.id.length === 0) {
-            this.notification.addError({
-                context: "customer",
-                message: "Id is required",
-            });
-            //throw new Error("Id is required");
-        }
-        if (this._name.length === 0) {
-            this.notification.addError({
-                context: "customer",
-                message: "Name is required",
-            });
-            //throw new Error("Name is required");
-        }
-    }
+    // validate() {
+    //     if (this.id.length === 0) {
+    //         this.notification.addError({
+    //             context: "customer",
+    //             message: "Id is required",
+    //         });
+    //         //throw new Error("Id is required");
+    //     }
+    //     if (this._name.length === 0) {
+    //         this.notification.addError({
+    //             context: "customer",
+    //             message: "Name is required",
+    //         });
+    //         //throw new Error("Name is required");
+    //     }
+    // }
     
+    validate() {
+        CustomerValidatorFactory.create().validate(this);
+    }
+
     changeName(name: string) {
         this._name = name;
 
